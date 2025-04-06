@@ -28,3 +28,50 @@ Nếu bạn chưa cài đặt `pipenv`, bạn có thể cài đặt bằng lện
 ```bash
 pip install pipenv
 ```
+## 3. **Tạo một môi trường ảo mới:**
+
+Gõ lệnh sau tạo môi trường ảo venv:
+```bash
+python3 -m venv venv
+```
+
+### **Kích hoạt môi trường ảo**
+
+Trên Linux:
+```bash
+source venv/bin/activate
+```
+Trên Windows:
+```bash
+venv\Scripts\activate
+```
+Khi môi trường ảo được kích hoạt, bạn sẽ thấy tên môi trường ảo xuất hiện ở đầu dòng lệnh, ví dụ:
+```bash
+(.venv) user@hostname:~/project-name$
+```
+## 4. **Cài thư viện:**
+
+Trong mỗi trường ảo cài thư viện bằng cách gõ lệnh sau:
+```bash
+pip install -r requirements.txt
+```
+
+## 5. **Thêm API key của bạn trong file main:**
+
+Lên google và search cách lấy API key của Gemini và dán vào chỗ **my_key** chỗ đoạn code bên dưới trong file main
+```python
+check_configure_genai(api_key="my_key")
+```
+Bạn có thể xem file main.py từ dự án tại [main.py](main.py).
+
+
+## 6. **Thêm API key của bạn trong file main:**
+
+Sau khi đã cài đặt môi trường ảo, cấu hình API key, và cài đặt các thư viện yêu cầu, bạn có thể chạy ứng dụng FastAPI như sau:
+```bash
+uvicorn main:app --reload
+```
+Ứng dụng FastAPI sẽ chạy trên http://127.0.0.1:8000. Bạn có thể truy cập API bằng Swagger UI
+```bash
+uvicorn main:app --reload
+```

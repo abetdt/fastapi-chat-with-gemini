@@ -73,5 +73,6 @@ uvicorn main:app --reload
 ```
 Ứng dụng FastAPI sẽ chạy trên http://127.0.0.1:8000. Bạn có thể truy cập API bằng Swagger UI
 ```bash
-uvicorn main:app --reload
+[uvicorn main:app --reload](http://127.0.0.1:8000/docs
+)
 ```

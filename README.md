@@ -10,8 +10,8 @@ Dự án này sử dụng **FastAPI** để xây dựng API cho việc trò chuy
 
 ```bash
 git clone https://github.com/abetdt/fastapi-chat-with-gemini.git
-cd fastapi-chat-with-gemini```
-
+cd fastapi-chat-with-gemini
+```
 
 ## 2. **Cài đặt môi trường ảo (virtual environment)**
 
@@ -27,3 +27,4 @@ Nếu bạn chưa cài đặt `pipenv`, bạn có thể cài đặt bằng lện
 
 ```bash
 pip install pipenv
+```
